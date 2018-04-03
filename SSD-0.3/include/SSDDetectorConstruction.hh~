@@ -1,0 +1,25 @@
+// Bradley Manning 3/2018
+// SSDDetectorConstruction.hh
+
+#ifndef SSDDetectorConstruction_h
+#define SSDDetectorConstruction_h 1
+
+#include "globals.hh"
+#include "G4VUserDetectorConstruction.hh"
+
+class SSDDetectorConstruction : public G4VUserDetectorConstruction
+{
+public:
+  SSDDetectorConstruction();
+  ~SSDDetectorConstruction();
+
+public:
+  G4VPhysicalVolume* Construct();
+
+private:
+  // Variables used in .cc
+
+
+};
+
+#endif /*SSDDetectorConstruction.hh*/
