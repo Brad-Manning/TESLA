@@ -1,0 +1,30 @@
+//Bradley Manning 8/2017
+
+#include "CherenkovDetectorConstruction.hh"
+
+
+#include "G4Material.hh"
+#include "G4MaterialTable.hh"
+#include "G4Element.hh"
+#include "G4ElementTable.hh"
+#include "G4LogicalBorderSurface.hh"
+#include "G4LogicalSkinSurface.hh"
+#include "G4Box.hh"
+#include "G4LogicalVolume.hh"
+#include "G4RotationMatrix.hh"
+#include "G4ThreeVector.hh"
+#include "G4Transform3D.hh"
+#include "G4PVPlacement.hh"
+#include "G4OpBoundaryProcess.hh"
+
+
+CherenkovDetectorConstruction::CherenkovDetectorConstruction();
+{
+  //Define dimensions of tank
+  //From Pierre Auger NIM2015 pg 175
+  //1.2m height, 1.8m radius
+  tank_radius = 1.8*m;
+  tank_height = 1.2*m;
+
+
+}
